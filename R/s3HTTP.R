@@ -331,7 +331,7 @@ function(bucketname,
                 if (isTRUE(accelerate)) {
                     base_url <- paste0("s3-accelerate.amazonaws.com")
                 } else {
-                    base_url <- paste0("s3-", region, ".amazonaws.com")
+                    base_url <- paste0("s3.", region, ".amazonaws.com")
                 }
             }
         }
